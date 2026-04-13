@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Module 4 Solution</title>
-</head>
-<body>
-  <h1>Module 4 Solution</h1>
+(function (window) {
+  var byeSpeaker = {};
 
-  <script src="SpeakHello.js"></script>
-  <script src="SpeakGoodBye.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+  byeSpeaker.speak = function (name) {
+    console.log("Goodbye " + name);
+  };
+
+  window.byeSpeaker = byeSpeaker;
+
+})(window);
